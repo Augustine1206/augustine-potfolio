@@ -20,8 +20,8 @@ export const USER_INFO = {
   email: "augustineboakyeasante@gmail.com",
   phone: "+233 598396607",
   location: "Accra, Ghana",
-  // Using a professional placeholder avatar
-  avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=300&h=300"
+  // Professional profile photo
+  avatar: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-25%20at%2013.11.04-EX53t3QvXRxiOHX6M9CClNP85hfZZR.jpeg"
 };
 
 export const NAV_LINKS = [
@@ -117,14 +117,14 @@ export const PROJECTS: Project[] = [
     title: 'Transcript Hub', 
     category: 'Software', 
     // Code/Development Image
-    imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80' 
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/476e7b38-e46c-4e59-bcac-ab8570994226-Msoypi4mBngj4si9KCXUwWK59qA0rW.png' 
   },
   { 
     id: '2', 
     title: 'Hostel Club', 
     category: 'Software', 
     // Modern Building/Accommodation Image
-    imageUrl: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80' 
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dd27fc1e-3664-48c1-8d01-34e4ec0710fb-qpRkyUb6fAHg5JrLryiFvoAgxkiVYs.png' 
   },
   { 
     id: '3', 

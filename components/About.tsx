@@ -30,7 +30,7 @@ const About: React.FC = () => {
           return (
             <div 
               key={service.id} 
-              className={`p-6 bg-white shadow-lg border-b-2 ${service.color} hover:-translate-y-2 transition-transform duration-300 group`}
+              className={`p-6 bg-white shadow-lg border-b-4 border-blue-600 hover:-translate-y-2 transition-transform duration-300 group`}
             >
               <div className={`mb-4 text-3xl ${service.color.replace('border-', 'text-')} group-hover:scale-110 transition-transform`}>
                 <Icon size={40} />
