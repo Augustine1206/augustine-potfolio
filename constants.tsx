@@ -112,83 +112,48 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
   // SOFTWARE PROJECTS
-  { 
-    id: '1', 
-    title: 'Transcript Hub', 
-    category: 'Software', 
-    // Code/Development Image
-    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/476e7b38-e46c-4e59-bcac-ab8570994226-Msoypi4mBngj4si9KCXUwWK59qA0rW.png' 
+  {
+    id: '1',
+    title: 'Transcript Hub',
+    category: 'Software',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/476e7b38-e46c-4e59-bcac-ab8570994226-Msoypi4mBngj4si9KCXUwWK59qA0rW.png'
   },
-  { 
-    id: '2', 
-    title: 'Hostel Club', 
-    category: 'Software', 
-    // Modern Building/Accommodation Image
-    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dd27fc1e-3664-48c1-8d01-34e4ec0710fb-qpRkyUb6fAHg5JrLryiFvoAgxkiVYs.png' 
+  {
+    id: '2',
+    title: 'Hostel Club',
+    category: 'Software',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dd27fc1e-3664-48c1-8d01-34e4ec0710fb-qpRkyUb6fAHg5JrLryiFvoAgxkiVYs.png'
   },
-  { 
-    id: '3', 
-    title: 'Cambridge Ghanaian Assoc. Website', 
-    category: 'Web Design', 
-    // Clean Web Design Image
-    imageUrl: 'https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80' 
-  },
-  { 
-    id: '4', 
-    title: 'Data Analytics Dashboard', 
-    category: 'Data Science', 
-    // Analytics/Charts Image
-    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80' 
-  },
-  { 
-    id: '5', 
-    title: 'AI Healthcare Concept', 
-    category: 'AI', 
-    // AI/Abstract Network Image
-    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80' 
-  },
-  
+
   // GRAPHIC DESIGN PROJECTS
-  { 
-    id: '6', 
-    title: 'CCTV Setup Campaign', 
-    category: 'Graphic Design', 
-    // Camera/Security Image
-    imageUrl: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80' 
+  {
+    id: '3',
+    title: 'Stationery & Craft',
+    category: 'Graphic Design',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-12%20at%2011.55.43%20%282%29-WH6si5FH5HWKQUBewf9Q5c0yqO0DbJ.jpeg'
   },
-  { 
-    id: '7', 
-    title: 'Freshers Orientation', 
-    category: 'Graphic Design', 
-    // Event/Crowd Image
-    imageUrl: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80' 
+  {
+    id: '4',
+    title: 'Vessel Designz Branding',
+    category: 'Graphic Design',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-12%20at%2011.55.44%20%281%29-GfaIz7pU9Co03V77tjP8PWehsoq0C0.jpeg'
   },
-  { 
-    id: '8', 
-    title: 'Stationery Branding', 
-    category: 'Graphic Design', 
-    // Branding/Stationery Image
-    imageUrl: 'https://images.unsplash.com/photo-1626785774573-4b799312afc2?auto=format&fit=crop&w=800&q=80' 
+  {
+    id: '5',
+    title: 'Grand Enstoolment Event',
+    category: 'Graphic Design',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled-2.jpg%20%281%29-x7ib7P1Ii0Yqv9zGFkcvk9M9LK0Cpq.jpeg'
   },
-  { 
-    id: '9', 
-    title: 'Event Invitation', 
-    category: 'Graphic Design', 
-    // Card/Paper Image
-    imageUrl: 'https://images.unsplash.com/photo-1556636224-3ea45b41091d?auto=format&fit=crop&w=800&q=80' 
+  {
+    id: '6',
+    title: 'SET Freshers Orientation',
+    category: 'Graphic Design',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-12%20at%2011.44.51%20%288%29-LNGwayaUXOu79vIt08YdZqdqmnc6mI.jpeg'
   },
-  { 
-    id: '10', 
-    title: 'Techpro Specifications', 
-    category: 'Graphic Design', 
-    // Technical Drawing/Blueprint Image
-    imageUrl: 'https://images.unsplash.com/photo-1581092921461-eab62e97a783?auto=format&fit=crop&w=800&q=80' 
-  },
-  { 
-    id: '11', 
-    title: 'Booklet Design', 
-    category: 'Graphic Design', 
-    // Editorial/Book Layout Image
-    imageUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80' 
+  {
+    id: '7',
+    title: 'TechPro Retail Service',
+    category: 'Graphic Design',
+    imageUrl: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-12%20at%2011.44.51%20%281%29-AQngm0dm4Pm1105ZpuKV2QsEbJmRCb.jpeg'
   },
 ];

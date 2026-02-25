@@ -3,7 +3,7 @@ import { USER_INFO } from '../constants';
 import { Download, ChevronsDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const videoUrl = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/home-bg.jpg-MJhhgomOTUh8feNb9hYylQ5NgX83Jj.mp4";
+  const videoUrl = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Background%20Image-kQ20H0iWfgXBwlATpXkgMXJw9K3yAR.mp4";
 
   return (
     <section id="home" className="relative h-screen min-h-[600px] w-full flex items-center overflow-hidden">
@@ -36,13 +36,22 @@ const Hero: React.FC = () => {
         <p className="text-lg md:text-xl text-white/90 font-sans mb-8 max-w-lg mx-auto lg:mx-0 font-light animate-fade-in-up delay-100">
           {USER_INFO.description}
         </p>
-        <div className="animate-fade-in-up delay-200">
+        <div className="animate-fade-in-up delay-200 flex gap-4 items-center justify-center lg:justify-start">
           <a 
-            href="#contact" 
+            href="https://blobs.vusercontent.net/blob/CV_Augustine%20Boakye%20Asante_PhD-XvYLErXDYNj3qegVVO011h5Uhn5vZe.pdf" 
+            download="Augustine_Boakye_Asante_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-white text-white uppercase tracking-widest text-xs font-medium hover:bg-white hover:text-black transition-colors"
           >
             <Download size={16} />
             Download CV
+          </a>
+          <a 
+            href="#contact" 
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black uppercase tracking-widest text-xs font-medium hover:bg-gray-100 transition-colors"
+          >
+            Get In Touch
           </a>
         </div>
       </div>
