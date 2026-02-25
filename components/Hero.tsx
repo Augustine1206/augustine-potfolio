@@ -1,37 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { USER_INFO } from '../constants';
 import { Download, ChevronsDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  // The direct link provided by the user
-  const googlePhotoUrl = "https://photos.fife.usercontent.google.com/pw/AP1GczMa3WTydCf2atHER26Pa6KMeiY_GUNeyKEpyL1il47TvNOoS7GbO7g=w1098-h607-s-no-gm?authuser=0";
-  
-  // Fallback placeholder
-  const fallbackUrl = "https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80";
-
-  const [imgSrc, setImgSrc] = useState(googlePhotoUrl);
+  const videoUrl = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Background%20Image-kQ20H0iWfgXBwlATpXkgMXJw9K3yAR.mp4";
 
   return (
     <section id="home" className="relative h-screen min-h-[600px] w-full flex items-center overflow-hidden">
       
-      {/* 
-        Background Image 
-        Using an <img> tag with referrerPolicy="no-referrer" is crucial for 
-        loading content from Google Photos links on external sites.
-      */}
-      <img 
-        src={imgSrc}
-        alt="Hero Background"
+      {/* Video Background with Fallback */}
+      <video 
+        src={videoUrl}
+        autoPlay
+        muted
+        loop
+        playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        referrerPolicy="no-referrer"
-        onError={() => {
-          // If the link fails (403/404), switch to the professional fallback
-          if (imgSrc !== fallbackUrl) {
-            console.warn("Google Photo link failed to load. Switching to fallback.");
-            setImgSrc(fallbackUrl);
-          }
-        }}
-      />
+      >
+        {/* Fallback for browsers that don't support video */}
+        <img 
+          src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+          alt="Hero Background"
+          className="w-full h-full object-cover"
+        />
+      </video>
 
       {/* Dark Overlay for text readability - Increased to 50% for better contrast */}
       <div className="absolute inset-0 bg-black/50 z-10"></div>
@@ -44,13 +36,22 @@ const Hero: React.FC = () => {
         <p className="text-lg md:text-xl text-white/90 font-sans mb-8 max-w-lg mx-auto lg:mx-0 font-light animate-fade-in-up delay-100">
           {USER_INFO.description}
         </p>
-        <div className="animate-fade-in-up delay-200">
+        <div className="animate-fade-in-up delay-200 flex gap-4 items-center justify-center lg:justify-start">
           <a 
-            href="#contact" 
+            href="https://blobs.vusercontent.net/blob/CV_Augustine%20Boakye%20Asante_PhD-XvYLErXDYNj3qegVVO011h5Uhn5vZe.pdf" 
+            download="Augustine_Boakye_Asante_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-white text-white uppercase tracking-widest text-xs font-medium hover:bg-white hover:text-black transition-colors"
           >
             <Download size={16} />
             Download CV
+          </a>
+          <a 
+            href="#contact" 
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black uppercase tracking-widest text-xs font-medium hover:bg-gray-100 transition-colors"
+          >
+            Get In Touch
           </a>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Pencil } from 'lucide-react';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 px-6 lg:px-16 max-w-6xl mx-auto bg-light/50">
+    <section id="experience" className="py-20 px-6 lg:px-16 max-w-6xl mx-auto bg-blue-50">
       <div className="mb-16">
         <span className="text-gray-400 text-xs tracking-[4px] uppercase block mb-2 font-bold">Experience</span>
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-dark mb-6">Work Experience</h2>
