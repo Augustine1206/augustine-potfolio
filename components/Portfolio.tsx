@@ -3,7 +3,7 @@ import { PROJECTS } from '../constants';
 import { Eye, Link as LinkIcon, RefreshCcw } from 'lucide-react';
 
 // Moved 'All' to the end of the list as requested
-const CATEGORIES = ['Software', 'Web Design', 'Data Science', 'Graphic Design', 'All'];
+const CATEGORIES = ['Software', 'Web Design', 'Data Science', 'AI', 'Graphic Design', 'All'];
 
 const Portfolio: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('All');

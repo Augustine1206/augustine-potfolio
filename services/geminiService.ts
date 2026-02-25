@@ -29,14 +29,14 @@ export const sendMessageToGemini = async (message: string): Promise<string> => {
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
+      model: 'gemini-1.5-flash',
       contents: message,
-      config: {
-        systemInstruction: SYSTEM_INSTRUCTION,
-      }
+      systemInstruction: SYSTEM_INSTRUCTION,
     });
 
-    return response.text || "Sorry, I couldn't generate a response.";
+    // Extract text from response - response.candidates[0].content.parts[0].text
+    const textContent = response.candidates?.[0]?.content?.parts?.[0]?.text;
+    return textContent || "Sorry, I couldn't generate a response.";
   } catch (error) {
     console.error("Gemini API Error:", error);
     return "An error occurred while contacting the AI assistant.";
