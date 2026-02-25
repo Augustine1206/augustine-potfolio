@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import GeminiChat from './components/GeminiChat';
+
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -18,7 +18,7 @@ function App() {
     <div className="flex font-sans text-gray-600 antialiased selection:bg-primary selection:text-white">
       {/* Mobile Toggle Button */}
       <div className="fixed top-4 left-4 z-50 lg:hidden">
-        <button 
+        <button
           onClick={toggleSidebar}
           className="bg-white p-2 rounded shadow text-dark hover:text-primary transition-colors"
         >
@@ -36,16 +36,14 @@ function App() {
         <Experience />
         <Portfolio />
         <Contact />
-        
+
         {/* Footer for main content */}
         <footer className="py-12 text-center text-sm text-gray-400 bg-white">
           <p>
-            Copyright &copy; {new Date().getFullYear()} All rights reserved | This portfolio is made with <span className="text-red-500">♥</span> using React
+            Copyright &copy; {new Date().getFullYear()} All rights reserved | Augustine Asante
           </p>
         </footer>
       </main>
-
-      <GeminiChat />
     </div>
   );
 }
