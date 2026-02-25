@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import GeminiChat from './components/GeminiChat';
+
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -44,8 +44,6 @@ function App() {
           </p>
         </footer>
       </main>
-
-      <GeminiChat />
     </div>
   );
 }
