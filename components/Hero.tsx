@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
         </p>
         <div className="animate-fade-in-up delay-200 flex gap-4 items-center justify-center lg:justify-start">
           <a 
-            href="https://blobs.vusercontent.net/blob/CV_Augustine%20Boakye%20Asante_PhD-XvYLErXDYNj3qegVVO011h5Uhn5vZe.pdf" 
+            href="https://blobs.vusercontent.net/blob/CV_Augustine%20Boakye%20Asante_Updated%20%287%29-eX1pSuGt1uckK9PxRixERzR1sMyDUr.pdf" 
             download="Augustine_Boakye_Asante_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
