@@ -11,13 +11,13 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
     <>
       {/* Mobile Overlay */}
       {isOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
           onClick={toggleSidebar}
         />
       )}
 
-      <aside 
+      <aside
         className={`
           fixed top-0 bottom-0 left-0 w-72 bg-light flex flex-col items-center text-center p-8 overflow-y-auto z-50 transition-transform duration-300 ease-in-out
           ${isOpen ? 'translate-x-0' : '-translate-x-full'}
@@ -26,9 +26,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
       >
         <div className="mb-8 w-full">
           <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 border-4 border-white shadow-md transition-transform hover:scale-105">
-            <img 
-              src={USER_INFO.avatar} 
-              alt={USER_INFO.name} 
+            <img
+              src={USER_INFO.avatar}
+              alt={USER_INFO.name}
               className="w-full h-full object-cover"
             />
           </div>
@@ -44,12 +44,12 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
           <ul className="space-y-4">
             {NAV_LINKS.map((link) => (
               <li key={link.name}>
-                <a 
-                  href={link.href} 
+                <a
+                  href={link.href}
                   className="block text-gray-600 hover:text-primary text-sm tracking-widest uppercase transition-colors font-medium border-b border-transparent hover:border-primary pb-1 mx-auto w-max"
                   onClick={(e) => {
-                     // Ensure sidebar closes on mobile
-                     if (window.innerWidth < 1024) toggleSidebar();
+                    // Ensure sidebar closes on mobile
+                    if (window.innerWidth < 1024) toggleSidebar();
                   }}
                 >
                   {link.name}
@@ -61,7 +61,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
 
         <div className="mt-8 text-xs text-gray-400">
           <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
-          <p>Made with React & Tailwind</p>
+          <p>Augustine @2026</p>
         </div>
       </aside>
     </>
